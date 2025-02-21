@@ -1,0 +1,22 @@
+name: SimpleAchievements
+version: '1.0-R1'
+main: de.hilsmann.simpleAchievements.SimpleAchievements
+api-version: '1.21'
+depend: [HeadDatabase]
+prefix: SimpleAchievements
+authors: [ Rikoji, mao_ex ]
+description: Achievements for mcsw.me
+website: mcsw.me
+
+commands:
+  achievement:
+    description: "Verwalte Achievements"
+    usage: "/achievement <create/list/remove>"
+    aliases: [Erfolge, Erfolg, ERFOLG, ERFOLGE]
+permissions:
+  achievements.admin:
+    description: "Erlaubt das Erstellen und Verwalten von Achievements"
+    default: op
+  achievements.use:
+    description: "Erlaubt Spielern, das Achievement-Menü zu öffnen"
+    default: true
