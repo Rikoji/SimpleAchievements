@@ -20,10 +20,7 @@ public class ChatInputListener implements Listener {
 
         if (achievementCommand.isCreatingAchievement(player)) {
             event.setCancelled(true);
-            player.sendMessage("§e[DEBUG] Chat-Eingabe erkannt, wird verarbeitet...");
             achievementCommand.handleChatInput(player, event.getMessage());
-        } else {
-            player.sendMessage("§c[DEBUG] Du befindest dich nicht in der Erfolgserstellung.");
         }
     }
 }
